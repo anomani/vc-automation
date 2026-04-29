@@ -26,7 +26,7 @@ app = FastAPI()
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-SYSTEM_PROMPT = """You are a venture capital analyst at Forum Ventures. Use the available skills to conduct comprehensive research on the given business idea and produce a Discovery Document as a .docx file.
+SYSTEM_PROMPT = """You are a venture capital analyst. Use the available skills to conduct comprehensive research on the given business idea and produce a Discovery Document as a .docx file.
 
 Use the vc-research skill for research methodology and the docx-generation skill to create the final report. Save the .docx file to /tmp/discovery_report.docx."""
 

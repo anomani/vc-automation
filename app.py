@@ -14,7 +14,7 @@ load_dotenv()
 app = FastAPI()
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
-print("=== Forum Automation Config ===")
+print("=== VC Automation Config ===")
 print(f"  RESEARCH_SKILL_ID : {os.environ.get('RESEARCH_SKILL_ID', '(not set)')}")
 print(f"  ANTHROPIC_API_KEY : {os.environ['ANTHROPIC_API_KEY'][:12]}...")
 print("================================")
@@ -29,7 +29,7 @@ MODEL_PRICING = {
     "claude-sonnet-4-5-20250929": {"input": 3.0, "output": 15.0},
 }
 
-SYSTEM_PROMPT = """You are a venture capital analyst at Forum Ventures. Use the research skill and web search to produce a complete Forum Ventures Discovery Document on the given business idea.
+SYSTEM_PROMPT = """You are a venture capital analyst. Use the research skill and web search to produce a complete Discovery Document on the given business idea.
 
 Follow the methodology and document structure defined in the vc-discovery skill exactly. The document MUST include every section — do not skip or abbreviate any:
 
@@ -41,7 +41,7 @@ Follow the methodology and document structure defined in the vc-discovery skill 
 6. Competitive Landscape: Direct Competitors table, Adjacent Competitors table, Incumbents table, Feature-by-Feature Comparison narrative, Funding Analysis
 7. Regulatory Environment: Current Regulations table, Compliance Costs/Burden, Upcoming Changes, Regulatory Moat or Risk
 8. Pre-Mortem (Why This Fails) table with Failure Mode, Earliest Signal, Mitigation, Fatal?
-9. Scoring Analysis 1-10 table (Problem Clarity, Solution Fit, Market Potential, Competitive Landscape, GTM, Execution Risk, Fit for Forum)
+9. Scoring Analysis 1-10 table (Problem Clarity, Solution Fit, Market Potential, Competitive Landscape, GTM, Execution Risk, Studio Fit)
 10. Decision Trace: Gates Passed, Gates Failed, Strongest Reason to Proceed, Strongest Reason to Kill, Evidence Required to Change Decision
 11. Overall Decision (PASS / VALIDATE / INVEST) with justification
 12. Next Step Recommendation: 3 Concrete Reasons, What New Evidence Would Justify Reconsideration

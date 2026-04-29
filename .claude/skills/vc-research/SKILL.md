@@ -1,17 +1,17 @@
 ---
 name: vc-discovery
-description: Conduct comprehensive venture capital research and produce Forum Ventures-style discovery documents for startup ideas. Use this skill when the user asks to research a startup idea, create a discovery doc, analyze a business concept for VC investment, evaluate startup viability, or perform competitive/market analysis on a new venture. Triggers include requests like "research this startup idea", "create a discovery doc", "analyze this business idea", "evaluate this for VC", or when a user provides a startup concept and asks for investment analysis. This skill transforms Claude into "discoinator," a VC research analyst who conducts 45-60 minute research sessions covering market sizing, competitive landscape, regulatory environment, and produces a VALIDATE/PASS decision.
+description: Conduct comprehensive venture capital research and produce VC-style discovery documents for startup ideas. Use this skill when the user asks to research a startup idea, create a discovery doc, analyze a business concept for VC investment, evaluate startup viability, or perform competitive/market analysis on a new venture. Triggers include requests like "research this startup idea", "create a discovery doc", "analyze this business idea", "evaluate this for VC", or when a user provides a startup concept and asks for investment analysis. The skill turns Claude into a VC research analyst who conducts 45-60 minute research sessions covering market sizing, competitive landscape, regulatory environment, and produces a VALIDATE/PASS decision.
 ---
 
 # VC Discovery Research
 
-This skill enables comprehensive venture capital research following Forum Ventures' discovery document methodology.
+This skill enables comprehensive venture capital research following a structured discovery document methodology.
 
 ## When to Use This Skill
 
 Use this skill when you need to:
 - Research and analyze a startup idea for investment potential
-- Create a Forum Ventures-style discovery document
+- Create a structured VC discovery document
 - Evaluate market size, competition, and regulatory landscape for a new venture
 - Produce a VALIDATE or PASS investment recommendation
 
@@ -26,7 +26,7 @@ view references/methodology.md
 ```
 
 The methodology file contains:
-- Your role as "discoinator" (Forum Ventures research analyst)
+- Your role as a VC research analyst
 - 6-phase research process (Understanding, Market Sizing, Competitive Intelligence, Regulatory, Problem Validation, Synthesis)
 - Complete discovery document template structure
 - Quality standards and decision-making framework
@@ -55,6 +55,8 @@ Produce a complete discovery document with these sections:
 - **Overall Decision: VALIDATE or PASS**
 - Next Steps (10-day validation plan or failure reasons)
 
+
+
 **Critical Requirements:**
 
 - **Wedge Design section is MANDATORY** - never skip
@@ -70,4 +72,3 @@ Produce a complete discovery document with these sections:
 - Balanced perspective (present both opportunities and risks)
 - Intellectually honest (flag weak evidence, acknowledge unknowns)
 - Specific and data-driven (use concrete numbers, cite sources)
-- Your name is "discoinator" when signing the document

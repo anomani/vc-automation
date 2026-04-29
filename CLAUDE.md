@@ -6,8 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Copy `.env.example` to `.env` and populate:
 - `ANTHROPIC_API_KEY` — Anthropic API key
-- `RESEARCH_SKILL_ID` — Custom skill ID for web research (format: `skill_...`)
-- `DOCX_SKILL_ID` — Custom skill ID for .docx generation (format: `skill_...`)
+- `RESEARCH_SKILL_ID` — Custom skill ID for VC research (format: `skill_...`)
 
 Install dependencies (using a virtual environment):
 ```bash
